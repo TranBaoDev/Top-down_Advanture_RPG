@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: d4adf4ec81cd8964b9508337d086f098
+guid: afb8bfe753959c443b2971de03800b99
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2101175276847748840
-    second: run_up_0
+      213: -318900256114518679
+    second: attack2_right_0
   - first:
-      213: 3396987343971830283
-    second: run_up_1
+      213: -6111027752318158853
+    second: attack2_right_1
   - first:
-      213: 4026534355312065940
-    second: run_up_2
+      213: -6839543684542749462
+    second: attack2_right_2
   - first:
-      213: 3746123119762467834
-    second: run_up_3
+      213: 6878315327292876997
+    second: attack2_right_3
   - first:
-      213: -7395723654248013618
-    second: run_up_4
+      213: -3076141712646753825
+    second: attack2_right_4
   - first:
-      213: 6925657076329794216
-    second: run_up_5
+      213: -1185513167200932586
+    second: attack2_right_5
   - first:
-      213: -485735562940750571
-    second: run_up_6
+      213: -320386297940308161
+    second: attack2_right_6
   - first:
-      213: 2286054313573989648
-    second: run_up_7
+      213: -3017202653767226072
+    second: attack2_right_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 22
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: run_up_0
+      name: attack2_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -149,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47acf4b4464f1e8489399f34ce92dd99
-      internalID: -1696674604
+      spriteID: 0ecd5547deb9568469a496ba5f3b1075
+      internalID: 498355782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_up_1
+      name: attack2_right_1
       rect:
         serializedVersion: 2
         x: 96
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58be7cc12bd89a5409aa61152d341a57
-      internalID: 1860373449
+      spriteID: 867cc9eaef2551840887e2ec982ae08d
+      internalID: 1068166191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_up_2
+      name: attack2_right_2
       rect:
         serializedVersion: 2
         x: 192
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37a65f54e07a27d4f8bcc7051499679e
-      internalID: 239018307
+      spriteID: c146932d4e1fbf8478213da3a97083ed
+      internalID: 1886403001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_up_3
+      name: attack2_right_3
       rect:
         serializedVersion: 2
         x: 288
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6993bd3a06dee54eab2c7992db4191e
-      internalID: -795927428
+      spriteID: 106935be2ff14f94ba3bce2758ac6d9a
+      internalID: 466049533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_up_4
+      name: attack2_right_4
       rect:
         serializedVersion: 2
         x: 384
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21a2e3849449c13459a1c0f472bf327e
-      internalID: -512723699
+      spriteID: e58317cea22047e49a900dc860c765dd
+      internalID: -675731241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_up_5
+      name: attack2_right_5
       rect:
         serializedVersion: 2
         x: 480
@@ -259,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84f87fc7bb634204da54b963d5d9076f
-      internalID: -1871393969
+      spriteID: b31f664a066790a4aac2895c9e9b8ab1
+      internalID: 1358149900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_up_6
+      name: attack2_right_6
       rect:
         serializedVersion: 2
         x: 576
@@ -281,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 355da9a987cc8444dbcb2945d32a4487
-      internalID: -395028837
+      spriteID: a3d9d4417694abe4bb5c944cd5e96204
+      internalID: -1148407553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_up_7
+      name: attack2_right_7
       rect:
         serializedVersion: 2
         x: 672
@@ -303,8 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4c67e5f290e47747823671008bfe3f1
-      internalID: -529518702
+      spriteID: 673d3f80b45c8b148a4ccac863d1689a
+      internalID: -546789389
       vertices: []
       indices: 
       edges: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 99072df0894f41749b3134aaa1e0f1e9
+    spriteID: d46f399836921844fb579f9baa7aa8f8
     internalID: 0
     vertices: []
     indices: 
@@ -323,14 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      run_up_0: -1696674604
-      run_up_1: 1860373449
-      run_up_2: 239018307
-      run_up_3: -795927428
-      run_up_4: -512723699
-      run_up_5: -1871393969
-      run_up_6: -395028837
-      run_up_7: -529518702
+      attack2_right_0: 498355782
+      attack2_right_1: 1068166191
+      attack2_right_2: 1886403001
+      attack2_right_3: 466049533
+      attack2_right_4: -675731241
+      attack2_right_5: 1358149900
+      attack2_right_6: -1148407553
+      attack2_right_7: -546789389
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

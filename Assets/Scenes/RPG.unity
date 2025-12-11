@@ -18304,7 +18304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   anim: {fileID: 595656912}
   rb: {fileID: 595656911}
-  attackTimerCd: 0.3
+  attackCd: 1.3
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0

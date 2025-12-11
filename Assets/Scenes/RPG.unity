@@ -18092,6 +18092,7 @@ GameObject:
   - component: {fileID: 595656912}
   - component: {fileID: 595656913}
   - component: {fileID: 595656914}
+  - component: {fileID: 595656915}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -18273,6 +18274,7 @@ MonoBehaviour:
   speed: 5
   anim: {fileID: 595656912}
   rb: {fileID: 595656911}
+  player_attack: {fileID: 595656915}
 --- !u!114 &595656914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18285,9 +18287,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c25fdc133cc68a4ca0de79abc532df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  currentHealth: 3
+  currentHealth: 10
   maxHealth: 10
   slider: {fileID: 921775563}
+--- !u!114 &595656915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595656907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb7a47dae0750f42847709667122a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  anim: {fileID: 595656912}
+  rb: {fileID: 595656911}
+  attackTimerCd: 0.3
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -18842,7 +18859,7 @@ Transform:
   m_GameObject: {fileID: 703068342}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.25, y: 0, z: 0}
+  m_LocalPosition: {x: 2.82, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19372,8 +19389,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_Combat
   damage: 1
-  attackPoint: {fileID: 1204999719}
   weaponRange: 1.7
+  knockbackForce: 5
+  stunTime: 0.5
+  attackPoint: {fileID: 1204999719}
   playLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -19418,7 +19437,7 @@ MonoBehaviour:
   speed: 3
   attackRange: 1.7
   attackCd: 1.5
-  playerDetectRange: 4.5
+  playerDetectRange: 4
 --- !u!1 &920380987
 GameObject:
   m_ObjectHideFlags: 0
@@ -19645,7 +19664,7 @@ Transform:
   m_GameObject: {fileID: 1204999718}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.35, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,12 +9,14 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector2 input;
     public float speed = 5;
-    public Animator anim;
 
-    private Vector2 lastMoveDiraction;
     private bool facingLeft = true;
-
+    private bool isKnockedBack;
+    private Vector2 lastMoveDiraction;
+    public Animator anim;
     public Rigidbody2D rb;
+
+    public PlayerAttack player_attack;
 
     void Start()
     {
@@ -22,11 +25,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        ProcessInputs();
-        Animate();
-        if (input.x < 0 && !facingLeft || input.x > 0 && !facingLeft)
+        if (Input.GetButtonDown("Slash"))
         {
-            Flip();
+            player_attack.Attack();
         }
     }
 
@@ -34,8 +35,16 @@ public class PlayerMovement : MonoBehaviour
     // Fixed Update is called 50x per frame
     void FixedUpdate()
     {
-
-        rb.linearVelocity = input * speed;
+        if (isKnockedBack == false)
+        {
+            ProcessInputs();
+            Animate();
+            if (input.x < 0 && !facingLeft || input.x > 0 && !facingLeft)
+            {
+                Flip();
+            }
+            rb.linearVelocity = input * speed;
+        }
 
     }
 
@@ -75,4 +84,18 @@ public class PlayerMovement : MonoBehaviour
         facingLeft = !facingLeft;
     }
 
+    public void Knockback(Transform enemy, float force, float stunTime)
+    {
+        isKnockedBack = true;
+        Vector2 direction = (transform.position - enemy.position).normalized;
+        rb.linearVelocity = direction * force;
+        StartCoroutine(KnockbackCounter(stunTime));
+    }
+
+    IEnumerator KnockbackCounter(float stunTime)
+    {
+        yield return new WaitForSeconds(stunTime);
+        rb.linearVelocity = Vector2.zero;
+        isKnockedBack = false;
+    }
 }
